@@ -1,0 +1,162 @@
+header {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+main {
+    padding-top: 200px;
+    /* task NO.15 */
+    text-decoration: line-through;
+}
+
+.task3 {
+    color: blue;
+}
+
+
+/*  Images Section  */
+.background {
+    width: 50rem;
+    height: 772px;
+    background-image: url(../images/tree.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column,
+.background {
+    float: left;
+    padding: 5px;
+}
+
+
+img[alt="Image 2"] {
+    padding: 5px;
+    border: solid 2px blue;
+}
+
+/*  Ending Images Section  */
+
+/* nth-child task */
+span:nth-child(even) {
+    background: blue;
+}
+
+/* Ending nth-child task */
+
+/* Media Queries  */
+.mediaquery {
+
+    background: blue;
+    width: 5rem;
+    height: 5rem;
+
+}
+
+@media screen and (min-width: 768px) {
+    .mediaquery {
+
+        background: yellow;
+        width: 7rem;
+        height: 7rem;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mediaquery {
+
+        background: red;
+        width: 10rem;
+        height: 10rem;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .mediaquery {
+
+        background: purple;
+        width: 12rem;
+        height: 12rem;
+
+    }
+}
+
+/* Ending Media Queries  */
+
+/* Positioning task */
+.relative {
+    position: relative;
+    float: right;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Flexbox */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    flex-grow: 1;
+}
+
+/* Grid Layout  */
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 150px;
+    border: 2px solid red;
+    grid-gap: 5px;
+}
+
+.cell {
+    border: 2px solid blue;
+}
+
+.two {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.three {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 4;
+}
+
+/* task NO.13 */
+.head3 {
+    color: brown;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* task NO.14 */
+
+footer a:hover {
+    text-decoration: none;
+    color: red;
+
+}
+
+footer a:visited {
+    color: green;
+
+}
+
+/* End */
